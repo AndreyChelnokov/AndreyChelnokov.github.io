@@ -1,0 +1,44 @@
+.node__toggle {
+    position: absolute;
+    left: -13px;
+
+    width: 12px;
+}
+.node_active > .node__header > .node__toggle {
+    transform: rotate(90deg);
+}
+.node__icon {
+    width: 20px;
+}
+.node__header {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    padding: 4px 0;
+
+    cursor: pointer;
+}
+.node__header-content {
+    display: flex;
+}
+.node__header-content span {
+    margin: 0 3px;
+}
+.node__content {
+    margin-left: 20px;
+    display: none;
+}
+.node_active > .node__content {
+    display: block;
+}
+
+#app {
+    padding: 20px;
+}
+#app svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
