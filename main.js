@@ -67,8 +67,6 @@ class Services {
                 if (a.sorthead < b.sorthead) return -1;
                 if (a.sorthead > b.sorthead) return 1;
 
-                if (a.sorthead == b.sorthead && a.node && !b.node) return -1;
-
                 return 0;
             })
 
